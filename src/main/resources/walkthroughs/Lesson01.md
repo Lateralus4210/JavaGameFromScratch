@@ -1,23 +1,38 @@
+# Getting Started
+
+Before anything else, we must navigate to:
+
+```/ {ProjectName} / src / main / java / {package/name} / Main.java```.
+
+```/ JavaGameFromScratch / src / main / java / quest / remember / Main.java```.
+
+```java
 package quest.remember;
+// or your package (mine is quest.remember)
 
 public class Main {
     public static void main(String[] args) {
-//        At first, the complexity of this line is best ignored. Why it reads this way isn't totally important at this
-//        point, but the fact it needs to read that way IS all-important (the JVM won't be able to run your program
-//        unless it sees this sequence at the start of everything else). Making the program do more doesn't require the
-//        same level of complexity as these first few lines.
+    }
+}
+```
 
-//        The very first thing we should work on is making sure our program runs by giving the simplest instructions of
-//        all, which is printing to the terminal
+At first, the complexity of this line is best ignored. 
 
-//        First we write "Welcome to the game!" with a semicolon to show Java that we're done with what we have to say.
+Why it reads this way isn't totally important at this point, but the fact it needs to read that way IS all-important (the JVM won't be able to run your program unless it sees this sequence at the start of everything else). 
 
-//    "Welcome to the game!";
+Making the program do more doesn't require the same level of complexity as these first few lines.
 
-//      But the program basically says, "what?"
+    The very first thing we should work on is making sure our program runs by giving the simplest instructions of
+    all, which is printing to the terminal
 
-//       So instead of just typing a random string, we'll tell it to do something:
-//       In Java, writing to the console is called "printing."
+    First we write "Welcome to the game!" with a semicolon to show Java that we're done with what we have to say.
+
+"Welcome to the game!";
+
+  But the program basically says, "what?"
+
+   So instead of just typing a random string, we'll tell it to do something:
+   In Java, writing to the console is called "printing."
 
 //    print("Welcome to the game!");
 
@@ -180,5 +195,3 @@ public class Main {
 //        That may have been pretty in-depth to just get one single print statement on the screen -
 //        but these are concepts that need to be talked about eventually, and the earlier you understand them,
 //        the earlier things will click.
-        }
-    }
