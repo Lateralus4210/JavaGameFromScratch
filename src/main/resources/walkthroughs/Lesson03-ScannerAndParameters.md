@@ -1,10 +1,9 @@
-/*
-UserInput.java
+# What we have so far
 
 So we've got our program talking back to us. We know once we've reached this point in the code, it should print this
 statement. If it does, we're in good shape!
 
-Since it does, that only means one thing, which is: it's time to implement more functionality.
+Since it works, that only means one thing, which is: it's time to implement more functionality.
 
 Maybe we want to be able to talk back to the program as well.
 
@@ -42,9 +41,9 @@ and the thing is, we can't use Scanner like that yet, and the conceptual reason 
 Even though this file is intimately familiar with the idea of a "Scanner,"
 there isn't an actual *Scanner* at all, yet.
 
-This is called an *instance* of a class. 
+This is called an *instance* of a class. We need to make an actual Scanner that is an instance of the Scanner class. 
 
-In other words, once we instantiate a class, a real "object" now exists to Java -
+In other words, once we instantiate a class, a real Scanner "object" now exists to Java -
 
 To build on the IKEA furniture example, the "instructions" aren't enough (or important at all, really) unless someone
 uses it to make something.
@@ -156,5 +155,3 @@ println(userInput + "is a pretty radical name, I must say!")
 That's pretty good, but don't forget to put another space here.
 
 Now when we type our name in, it says "Zach is a pretty radical name, I must say!"
-
- */

@@ -21,9 +21,9 @@ This is important because Javier is infinitely more useful to us if he can *do* 
 
 So Javier is standing right outside your door, waiting to be told how to be helpful.
 
-As soon as we've found something for Javier to do, we can open the door and...
+As soon as we've found something for Javier to do, we open the door and...
 
-talking in the syntax Javier understands, we can say:
+talking in the syntax Javier understands, we say:
 
 ```java
 OpenGarageDoor();
@@ -44,7 +44,7 @@ But this is the first time Javier has done this, so he needs your help.
 
 We need to define what each of these mean.
 
-But as long as we speak in a way that Java understands (and we have lots of ways of learning how to speak to Java),
+But as long as we speak in a way that Java understands,
 
 Java can not just mow lawns, but build houses, coordinate city-wide efforts, light the entire nation -
 
@@ -52,13 +52,11 @@ we just have to be more and more detailed the bigger the project gets.
 
 # Defining Methods
 
-Defining one of these methods can be incredibly complex or mind-numbingly simple.
+Defining a methods can either be incredibly complex or incredibly simple.
 
 Inside "RemoveLawnmowerFromGarage()" we might define code that tells Java to check the battery and the gas first before trying to StartLawnmower().
 
 Inside UseWeedeater(), there might be instructions for how to hold it to cut the grass but not Java's shins, and an internal check that won't allow Java to UseWeedeater() unless he is wearing safety glasses.
-
-And Javier would say, "Okay, got it! Can you tell me how to OpenGarageDoor? How do I RemoveLawnMowerFromGarage?"
 
 And you would have to walk through each one of these once - but after you did, Javier would know how to do it from start to finish.
 
@@ -66,7 +64,7 @@ But say that Javier shows up at your house the next week and is looking for a ta
 
 And we want Javier to do the same things as last week - only we don't want to walk through the entire thing again.
 
-It would be awfully convenient to be able to just reference the instructions from the past week and say -
+It would be convenient to be able to just reference the instructions from the past week and say -
 
 "Remember what you did last week? Just do all that again."
 
@@ -113,13 +111,11 @@ Let's take this a step further and write a little more pseudocode.
 
   By the way, you may have noticed I used grassLength at the end of the address -
 
-  this isn't a method (we can tell because there aren't parentheses)
+  this isn't a method (we can tell because there aren't parentheses) though it's chained like one.
 
   This is actually a variable. These just hold values, instead of holding instructions.
 
   When a variable belongs to a class, it's called a parameter.
-
-Back to making a game!
 
 Now that we've met our friend Javier and understand some of the ways we have to communicate to make things work between us,
   we can see why something like "print" doesn't do anything.
@@ -128,6 +124,9 @@ Your friend Java doesn't know what "print" is, unless it also knows where to go 
 
 So in this case, "print" turns into System.out.print - the "print" function is defined within the System class, in the
   System object "out" - important later but not super important this moment!
+
+Another way to think about it is we need to send Javier to the "System" street, at the house "out" so he can ask
+the person who lives there to show him how to "print."
 
   That may have been pretty in-depth to just get one single print statement on the screen -
   but these are concepts that need to be talked about eventually, and the earlier you understand them,

@@ -96,7 +96,7 @@ static Scanner s = new Scanner(System.in); // Make Scanner static so that it is 
 ```
 
 so basically, this thing is going to run our command as fast as it possibly can.
-If it wasn't waiting on our input, it might run hundreds of times per second.
+If it wasn't waiting on our input, it might run hundreds or thousands of times per second.
 
 Later, we could set it up so the game runs on ticks instead (so instead of running the
 program as fast as possible, it updates just a few times per second instead).
@@ -150,8 +150,9 @@ would probably want to make it a class instead - much more robust.
 
 Right now, our method will work for what we're trying to do.
 But maybe we want to customize the behavior, or even allow the user to customize
-the behavior. That logic is going to get pretty complicated inside a single method.
+the behavior. That logic would get pretty complicated inside a single method.
+
+We'll talk about using multiple files later, when we can't avoid it any more.
 
 Inside it we'll clear the terminal, we'll set the currentText then show it, and then
 we'll await the user's input.
-*/
