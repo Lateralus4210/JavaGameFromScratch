@@ -1,4 +1,5 @@
-/*
+# What we have so far
+
 So the essence of our game is this:
 The terminal prints some text, then awaits the user's input.
 With even that, the most basic of scripts, we could spend years developing 
@@ -59,6 +60,8 @@ It will only run ShowCurrentText() as many times as I have typed it out here.
 What we need is to set our code up to keep running this until we say stop - 
 not run it once and then stop.
 
+# The Game Loop
+
 For this, we can employ loops - there are two types of loops:
 for loops, which do it FOR a certain number of times
 and while loops, which run until something we decide changes.
@@ -68,7 +71,29 @@ until some *thing* becomes false. Basically while we're playing the game, this t
 is considered True, and while we're not playing the game this thing is considered False.
 This is the game loop, and it's how we're going to get our program to run forever.
 
-while True....
+```java
+package quest.remember.JavaGameFromScratch;
+
+import java.util.Scanner;
+
+public class Main {
+static Scanner s = new Scanner(System.in); // Make Scanner static so that it is accessible in refreshTerminal()
+// Making an object static allows it to be seen at the class level.
+
+    public static void main(String[] args) {
+
+        while (true) {
+            refreshTerminal();
+        }
+
+    }
+
+    public static void refreshTerminal() {
+        String u = s.nextLine();
+        System.out.println("Hm. " + u + ", you say?");
+    }
+}
+```
 
 so basically, this thing is going to run our command as fast as it possibly can.
 If it wasn't waiting on our input, it might run hundreds of times per second.
@@ -125,7 +150,7 @@ would probably want to make it a class instead - much more robust.
 
 Right now, our method will work for what we're trying to do.
 But maybe we want to customize the behavior, or even allow the user to customize
-the behavior. That logic is going to get pretty complicated inside of a single method.
+the behavior. That logic is going to get pretty complicated inside a single method.
 
 Inside it we'll clear the terminal, we'll set the currentText then show it, and then
 we'll await the user's input.

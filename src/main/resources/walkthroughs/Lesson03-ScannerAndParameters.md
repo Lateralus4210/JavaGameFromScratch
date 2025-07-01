@@ -4,7 +4,7 @@ UserInput.java
 So we've got our program talking back to us. We know once we've reached this point in the code, it should print this
 statement. If it does, we're in good shape!
 
-Since it does, that only means one thing, which is it's time to implement more functionality.
+Since it does, that only means one thing, which is: it's time to implement more functionality.
 
 Maybe we want to be able to talk back to the program as well.
 
@@ -37,18 +37,14 @@ and as far as it's concerned, we can refer to it as Scanner.
 
 But it's still not Scanner.scan() -
 
-the thing is, we can't use Scanner like that, and the conceptual reason is this:
+and the thing is, we can't use Scanner like that yet, and the conceptual reason is this:
 
 Even though this file is intimately familiar with the idea of a "Scanner,"
-there isn't an actual *Scanner* in sight.
+there isn't an actual *Scanner* at all, yet.
 
-So for instance, when we called System.out.print, it's acting on System.out, which is allowed because there's only
-ever one System and one System.out.
+This is called an *instance* of a class. 
 
-This is called an *instance* of a class. System.out is already an "instance" of the System class, so we can reference it
-to Java because as an instance, it has been instantiated.
-
-In other words, it now exists to Java -
+In other words, once we instantiate a class, a real "object" now exists to Java -
 
 To build on the IKEA furniture example, the "instructions" aren't enough (or important at all, really) unless someone
 uses it to make something.
@@ -63,20 +59,19 @@ So in order to create a Scanner object, we can start here:
 
 new Scanner;
 
-Now, this next part could use some clarification - I'm going to add parentheses here:
+Now, this next part could use some clarification, because I'm going to add parentheses here, but not for the same reason:
 
 new Scanner();
 
-But if we recall that () usually denote a method -
+If we recall that () usually denote a method -
  it's not immediately obvious what method we're calling.
 
-The truth is, the "method" we're calling is basically "MakeOne()"
-
-"Make one of these things"
+The truth is, the "method" we're calling is basically "MakeOneOfTheseThings()" and that's why the parentheses are there.
 
 But Java won't let us just create a new instance of an object without giving it a name.
 
-We're going to need to refer to this object later if we want to use it, so we have to give it a name
+We're also going to need to refer to this object later if we want to use it, so we have to give it a name
+
 We can call it anything at all like:
 
 lilScannerBoy = new Scanner();
@@ -99,7 +94,7 @@ Scanner s = new Scanner();
 By the way, just like "String" was the data type of "Skyler" earlier, and "Integer" was the data type of 1202,
 "Scanner" is the data type of this variable s.
 
-Java is very picky about what knowing what data types you're talking *before* you talk about them.
+Java is very picky about what knowing what data types you're talking about *before* you talk about them.
 
 So with this line, we actually have a Scanner object whose name is s.
 
@@ -112,7 +107,9 @@ For instance, going back to Javier, when we inform him of the whole mowLawn() me
 
 "Hey, if I say one more thing when I say mowLawn(), that's the days I want you to come back and do this"
 
-So we would say mowLawn("Thursday");
+So we could say mowLawn("Thursday");
+
+Or if we needed him to come more often (like when grass is 2 inches), maybe we write the method so that we're allowed to say mowLawn(2).
 
 Likewise, we need to pass a parameter into our Scanner object so that it knows what exactly it's scanning.
 
@@ -133,9 +130,9 @@ What we're looking for is nextLine();
 
 Basically, we're using the Scanner to scan for the next line.
 
-Because think about it: when the Scanner runs, it will insert a line break and wait for whatever you say.
+Because think about it: when the Scanner runs, it inserts a line break and wait for whatever you say.
 
-So scanner has a built-in method that listens to that next line.
+So scanner has a built-in method that listens to that "next line".
 
 But again, even if the user enters something, we can't use whatever they enter for anything later on, unless we name it.
 
@@ -158,6 +155,6 @@ println(userInput + "is a pretty radical name, I must say!")
 
 That's pretty good, but don't forget to put another space here.
 
-Now when we type our name in, it says ....
+Now when we type our name in, it says "Zach is a pretty radical name, I must say!"
 
  */

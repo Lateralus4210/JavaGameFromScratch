@@ -59,8 +59,10 @@ Btw, what is a class? It's usually described as a set of instructions, but IMO i
 Think about getting a set of build instructions with a piece of furniture from IKEA.
 
 In programming, a class isn't *just* those build instructions -
+
 a class can function as the paper it's written on and the ink it's written with, it can function
 as the screws, the screwdriver, a class could be a timer to see how long it takes you to build it -
+
 and it can get as complex as writing a class that makes up the delivery driver automaton bringing it to you and the van they brought it in. It could also make up the
 street it's driving on... the city you live in... the planet you live on.
 
