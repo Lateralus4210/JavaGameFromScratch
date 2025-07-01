@@ -21,11 +21,11 @@ progression of the game somehow..
 meaning the user's choices need to direct our code somehow.
 
 The simplest way to do this would be if statements.
-For a few that would work well, but if we were to try developing our game for a
-few days only using if statements, it might not work so well.
-(But maybe it could? Idk maybe the simplicity of it would make it worth giving a shot)
+If we only need to use a few, that would work well, but if we were to try developing our game for a few days only using if statements, it might get cluttered quickly...
 
-But typically that's not the way it would be done. What we would probably want to do 
+and start sprawling to the end of the line.
+
+Typically that's not the way it would be done. What we would probably want to do 
 first is make the code more repeatable -
 
 Say we did actually nest all those if statements - if we wanted to go back later and 

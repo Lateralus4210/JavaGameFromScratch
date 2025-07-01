@@ -4,3 +4,8 @@
     private static final String BLUE = "\u001B[34m";
     private static final String BOLD = "\u001B[1m";
 
+
+
+        // Simulate clearing line
+        System.out.print("\033[1A"); // Move cursor up 1 line
+        System.out.print("\033[2K"); // Erase the line
