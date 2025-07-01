@@ -1,67 +1,25 @@
-## Concepts we've covered so far:
-### *Navigating a project, 
+##### Concepts we've covered so far:
+- Installing an IDE
+- Creating and Navigating a project
+- Chaining
+- Syntax
+- Classes and methods (briefly)
 
-# Talking to Java (Javier)
-
-From here, we're going to imagine you have a human friend who only understands if you speak in Java syntax.
-
-He'll be called Javier.
-
-To tell him where you live, you would have to give the chained address for him to understand what you're saying.
-
-
-```java
-California.LosAngeles.90210.FourthStreet.8720
-```
-
-One more thing we should talk about before moving on:
-
-Giving Javier your address only tells him *where* to find something...
-
-but it doesn't tell him *how* to do anything (yet).
-
-This is important because Javier is infinitely more useful to us if he can *do* something!
-
-So Javier is standing right outside your door, waiting to be told how to be helpful.
-
-As soon as we've found something for Javier to do, we open the door and...
-
-talking in the syntax Javier understands, we say:
-
-```java
-OpenGarageDoor();
-RemoveLawnmowerFromGarage();
-StartLawnmower();
-MowAroundThePerimeter();
-MowCenterOfLawn();
-UseWeedeater();
-```
-
-These don't mean much on their own - 
-
-At the very least, Javier knows from the parentheses () that we intend to do something.
-
-And he knows we're done speaking because we used the semicolon.
-
-But this is the first time Javier has done this, so he needs your help.
-
-We need to define what each of these mean.
-
-But as long as we speak in a way that Java understands,
-
-Java can not just mow lawns, but build houses, coordinate city-wide efforts, light the entire nation -
-
-we just have to be more and more detailed the bigger the project gets.
+---
 
 # Defining Methods
 
-Defining a methods can either be incredibly complex or incredibly simple.
+Instructions that we put in a method can either be incredibly complex or incredibly simple.
 
-Inside "RemoveLawnmowerFromGarage()" we might define code that tells Java to check the battery and the gas first before trying to StartLawnmower().
+Inside "RemoveLawnmowerFromGarage()" we might write code that tells Javier to check the battery and the gas first before trying to StartLawnmower().
 
-Inside UseWeedeater(), there might be instructions for how to hold it to cut the grass but not Java's shins, and an internal check that won't allow Java to UseWeedeater() unless he is wearing safety glasses.
+Inside UseWeedeater(), there might be instructions for how to hold it to cut the grass but not Javier's shins...
+
+and an internal check that won't allow Javier to UseWeedeater() unless he is wearing safety glasses.
 
 And you would have to walk through each one of these once - but after you did, Javier would know how to do it from start to finish.
+
+This is the purpose of defining methods in Java - we want to give instructions for how to complete a task.
 
 But say that Javier shows up at your house the next week and is looking for a task -
 
