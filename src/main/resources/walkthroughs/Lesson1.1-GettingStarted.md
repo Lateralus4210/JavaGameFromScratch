@@ -1,5 +1,9 @@
 # Getting Started
 
+Check out the left-hand side of your IDE, or coding software.
+
+This is the navigator, or the explorer, and it should be opened to your project folder.
+
 Before anything else, we must navigate to:
 
 ```/ {ProjectName} / src / main / java / {package/name} / Main.java```.

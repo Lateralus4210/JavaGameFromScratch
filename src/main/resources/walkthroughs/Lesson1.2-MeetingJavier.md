@@ -1,3 +1,6 @@
+## Concepts we've covered so far:
+### *Navigating a project, 
+
 # Talking to Java (Javier)
 
 From here, we're going to imagine you have a human friend who only understands if you speak in Java syntax.
