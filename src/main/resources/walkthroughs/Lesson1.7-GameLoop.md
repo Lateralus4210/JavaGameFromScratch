@@ -1,3 +1,14 @@
+##### So far we've covered:
+- Installing an IDE
+- Creating and Navigating a project
+- Writing comments
+- Methods (instructions) belong to Classes (matter)
+- Chaining
+- Defining methods
+- Printing to the terminal
+- The Scanner class
+- Instantiating a class (making an object)
+
 # What we have so far
 
 So the essence of our game is this:

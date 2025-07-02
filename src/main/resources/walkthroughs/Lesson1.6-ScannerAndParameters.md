@@ -1,3 +1,12 @@
+##### So far we've covered:
+- Installing an IDE
+- Creating and Navigating a project
+- Writing comments
+- Methods (instructions) belong to Classes (matter)
+- Chaining
+- Defining methods
+- Printing to the terminal
+
 # What we have so far
 
 So we've got our program talking back to us. We know once we've reached this point in the code, it should print this

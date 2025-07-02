@@ -1,6 +1,6 @@
 # Software We'll Need
 
-So we want to write a text game in Java.
+So we want to make a game in Java.
 
 We could theoretically just do this in something like Notepad, or even Microsoft Word.
 

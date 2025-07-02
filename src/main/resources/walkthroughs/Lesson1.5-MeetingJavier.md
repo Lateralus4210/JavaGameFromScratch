@@ -1,9 +1,9 @@
-##### Concepts we've covered so far:
+##### So far we've covered:
 - Installing an IDE
 - Creating and Navigating a project
+- Writing comments
+- Methods (instructions) belong to Classes (matter)
 - Chaining
-- Syntax
-- Classes and methods (briefly)
 
 ---
 
